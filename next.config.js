@@ -1,6 +1,12 @@
 const path = require('path')
-const CopyPlugin = require('copy-webpack-plugin')
-module.exports = {
+const CopyPlugin = require('copy-webpack-plugin');
+const withTM = require('next-transpile-modules')([
+	'@ionic/core/components',
+	'@ionic/react',
+	'@stencil/core',
+]);
+
+module.exports = withTM({
   webpack: (config) => {
     config.plugins.push(
       new CopyPlugin({
@@ -16,5 +22,5 @@ module.exports = {
       })
     )
     return config
-  },
-}
+  }
+});
