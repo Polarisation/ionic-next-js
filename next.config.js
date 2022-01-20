@@ -4,6 +4,7 @@ const withTM = require('next-transpile-modules')([
 	'@ionic/core/components',
 	'@ionic/react',
 	'@stencil/core',
+	'ionicons/components',
 ]);
 
 module.exports = withTM({
