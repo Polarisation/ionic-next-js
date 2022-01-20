@@ -1,10 +1,10 @@
 const path = require('path')
 const CopyPlugin = require('copy-webpack-plugin');
 const withTM = require('next-transpile-modules')([
-	'@ionic/core/components',
 	'@ionic/react',
+	'@ionic/core',
 	'@stencil/core',
-	'ionicons/components',
+	'ionicons',
 ]);
 
 module.exports = withTM({
@@ -23,5 +23,5 @@ module.exports = withTM({
       })
     )
     return config
-  }
+  },
 });
