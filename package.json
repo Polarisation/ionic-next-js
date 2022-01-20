@@ -7,8 +7,8 @@
     "export": "next export -o build"
   },
   "dependencies": {
-    "@ionic/react": "6.0.3-dev.1642046533.063c43f",
-    "ionicons": "^6.0.0",
+    "@ionic/react": "6.0.4-dev.1642625499.0d8dbf9",
+    "ionicons": "^6.0.1",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
